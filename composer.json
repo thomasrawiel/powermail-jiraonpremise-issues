@@ -16,7 +16,7 @@
 	},
 	"require": {
 		"typo3/cms-core": "^12.4",
-		"traw/powermail-jira": "^1.0 || dev-main",
+		"traw/powermail-jira": "^1.0",
 		"lesstif/php-jira-rest-client": "^5.0"
 	},
 	"extra": {
