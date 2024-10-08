@@ -2,14 +2,12 @@
 
 namespace TRAW\PowermailJiraonpremiseIssues\Domain\Model;
 
+use In2code\Powermail\Domain\Model\Answer;
 use TRAW\PowermailJira\Domain\Model\IssueDocumentInterface;
 use TRAW\PowermailJira\Events\PowermailSubmitEvent;
-use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
-use In2code\Powermail\Domain\Model\Answer;
 
 /**
  * Class IssueDocument
- * @package TRAW\PowermailJiraonpremiseIssues\Domain\Model
  */
 class IssueDocument implements IssueDocumentInterface
 {
@@ -46,10 +44,9 @@ class IssueDocument implements IssueDocumentInterface
         }
 
         $doc .= $nl . $nl;
-        $doc .= '- - - This issue has been automatically created - - -' . $nl;
+        $doc .= '--- This issue has been automatically created ---' . $nl;
         $doc .= 'URL: ' . $url;
 
         return $doc;
     }
-
 }

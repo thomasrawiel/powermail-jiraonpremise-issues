@@ -24,15 +24,13 @@ class ArrayConfiguration extends \JiraRestApi\Configuration\ArrayConfiguration
         $this->useTokenBasedAuth = false;
         $this->personalAccessToken = '';
 
-
-
         foreach ($configuration as $key => $value) {
             if (property_exists($this, $key)) {
                 $this->$key = $value;
             }
         }
 
-        if(!empty($this->personalAccessToken)) {
+        if (!empty($this->personalAccessToken)) {
             $this->useTokenBasedAuth = true;
         }
     }
