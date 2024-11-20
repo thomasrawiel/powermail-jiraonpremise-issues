@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 namespace TRAW\PowermailJiraonpremiseIssues\Domain\Model;
 
 use In2code\Powermail\Domain\Model\Answer;
