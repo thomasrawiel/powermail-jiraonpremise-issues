@@ -15,13 +15,17 @@
 		}
 	},
 	"require": {
-		"typo3/cms-core": "^13",
+		"typo3/cms-core": "^13 || ^14",
 		"traw/powermail-jira": "^1.6",
 		"lesstif/php-jira-rest-client": "^5.0"
 	},
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "powermail_jiraonpremise_issues"
+			"extension-key": "powermail_jiraonpremise_issues",
+			"version": "1.2.0",
+			"Package": {
+				"providesPackages": {}
+			}
 		}
 	}
 }
